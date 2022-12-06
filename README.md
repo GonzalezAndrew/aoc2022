@@ -20,3 +20,21 @@ $ find -maxdepth 1 -type d -name 'day*' -not -name day00 | sort | xargs --replac
 71300
 > 431 μs
 ```
+
+
+### usage
+
+pulling inputs for a problem
+```
+$ cd day01
+$ aoc-download-input
+```
+
+testing and submitting problem
+
+```
+# inside a day directory
+$ pytest part1.py
+$ python3 part1.py| aoc-submit --part 1
+$ python3 part2.py| aoc-submit --part 2
+```
