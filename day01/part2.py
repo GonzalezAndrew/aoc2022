@@ -13,13 +13,14 @@ INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 def compute(s: str) -> int:
     top_elves = []
     calories = s.split('\n\n')
-    
+
     for calorie in calories:
         top_elves.append(sum(int(c) for c in calorie.splitlines()))
-    
+
     top_elves.sort()
-    
+
     return sum(top_elves[-3:])
+
 
 INPUT_S = '''\
 1000

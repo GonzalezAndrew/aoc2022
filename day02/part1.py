@@ -21,6 +21,7 @@ R = {'A', 'X'}
 P = {'B', 'Y'}
 S = {'C', 'Z'}
 
+
 def compute(s: str) -> int:
     score = 0
 
@@ -35,6 +36,7 @@ def compute(s: str) -> int:
             score += 6
         score += scale[user]
     return score
+
 
 INPUT_S = '''\
 A Y

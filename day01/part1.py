@@ -21,6 +21,7 @@ def compute(s: str) -> int:
             max_calories = total_calories
     return max_calories
 
+
 INPUT_S = '''\
 1000
 2000
